@@ -260,12 +260,13 @@ body{
 	margin-top: 20%;
 }
 .bordered-one{
-	width: 46%;
+	width: 47%;
 	font-size:13px;
 }
 .bordered-two{
-	width: 46%;
+	width: 47%;
 	font-size:13px;
+	margin-right: 0;
 }
 .tab-layer .nav-pills{
 	display: block !important;
