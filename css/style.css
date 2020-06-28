@@ -263,16 +263,16 @@ body{
 	width: 47%;
 	font-size:13px;
 	border: 2px solid red;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 30px !important;
+	padding-right: 30px !important;
 }
 .bordered-two{
 	width: 47%;
 	font-size:13px;
 	margin-right: 0;
 	border: 2px solid red;
-		padding-left: 30px;
-	padding-right: 30px;
+		padding-left: 30px !important;
+	padding-right: 30px !important;
 }
 .tab-layer .nav-pills{
 	display: block !important;
