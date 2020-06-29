@@ -108,7 +108,7 @@ body{
 .tab-one .btn, .tab-two .btn, .add-btn{
 	background: hsl(231, 69%, 60%);
 }
-.tab-one-right, .tab-two-right{
+.tab-one-right, .tab-two-right,.tab-three-right{
 	padding-top: 3em;
 }
 .left-bg{
@@ -197,6 +197,40 @@ body{
 }
 .icon a:hover{
 	color: hsl(0, 94%, 66%);
+}
+@media(max-width: 1024px){
+	.img-right{
+	right: 0;
+	max-width: 90%;
+	height: 350px;
+}
+.right-bg{
+	right: -2.4%;
+	top: 28%;
+	width: 40%;
+	height: 250px;
+}
+.first-layer h1{
+	font-size: 36px;
+	margin-top: 50px;
+}
+.first-layer p{
+	font-size: 16px;
+}
+.nav-pills .nav-item{
+	font-size: 14px;
+	margin-right: 0px !important;
+}
+.tab-one img, .tab-two img, .tab-three img{
+	max-width: 80%;
+	height: 250px;
+}
+.left-bg{
+	left: -9%;
+	bottom: -60px;
+	width: 45%;
+	height: 250px;
+}
 }
 @media(max-width: 858px){
 	.checkbtn, .closebtn{
