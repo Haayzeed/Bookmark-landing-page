@@ -5,7 +5,6 @@
 }
 body{
 	font-family: 'Rubik', sans-serif;
-	overflow-x: none;
 }
 .menu-holder{
 	width: 100%;
@@ -41,13 +40,16 @@ body{
 #check, #close{
 	display: none;
 }
-.checkbtn, .closebtn{
+.checkbtn, .closebtn {
 	font-size: 30px;
 	color: white;
 	float: right;
 	line-height: 45px;
 	margin-right: 10px;
 	cursor: pointer;
+	display: none;
+}
+.mini-menu-controller{
 	display: none;
 }
 .menu-holder li{
@@ -61,11 +63,10 @@ body{
 .first-layer{
 	margin-top: 5%;
 	position: relative;
-	/*height: 300px;*/
 }
 .right-bg{
 	position: absolute;
-	right: -9%;
+	right: -9% !important;
 	bottom: -100px;
 	width: 40%;
 	height: 300px;
@@ -110,13 +111,11 @@ body{
 	font-weight: 500;
 	border-radius: 0;
 	padding-bottom: 20px;
-
 }
 .nav-pills .nav-item a.active{
 	color: hsl(0, 94%, 66%);
 	border-bottom: 2px solid hsl(0, 94%, 66%);
 }
-
 .tab-one .btn, .tab-two .btn, .add-btn{
 	background: hsl(231, 69%, 60%);
 }
@@ -148,7 +147,6 @@ body{
 	border: none;
 	border-radius: 30px;
 	padding-bottom: 10px;
-	/*min-height: 25em;*/
 }
 .layer-five{
 	margin-top: 6%;
@@ -210,21 +208,22 @@ body{
 .icon a:hover{
 	color: hsl(0, 94%, 66%);
 }
+/*=====================================Media Queries====================================*/
 @media(max-width: 1680px){
 	.right-bg{
-		right: -23%;
+		right: -23% !important;
 		width: 55%;	
 	}
 }
 @media(max-width: 1440px){
 	.right-bg{
-		right: -12.4%;
+		right: -12.4% !important;
 		width: 42%;	
 	}
 }
 @media(max-width: 1280px){
 	.right-bg{
-		right: -5.2%;
+		right: -5.2% !important;
 	}
 }
 @media(max-width: 1024px){
@@ -234,7 +233,7 @@ body{
 		height: 350px;
 	}
 	.right-bg{
-		right: -2.4%;
+		right: -2.4% !important;
 		top: 28%;
 		width: 40%;
 		height: 250px;
@@ -297,7 +296,7 @@ body{
 		height: 250px;
 	}
 	.right-bg{
-		right: -17.5%;
+		right: -17.5% !important;
 		top: 28%;
 		width: 50%;
 		height: 180px;
@@ -321,7 +320,7 @@ body{
 	}
 	.left-bg{
 		left: -18%;
-		top: 35%;
+		top: 45%;
 		width: 55%;
 		height: 180px;
 	}
@@ -336,7 +335,7 @@ body{
 		font-size: 13px;
 	}
 	.layer-four{
-		margin-top: 6em;
+		margin-top: 8em;
 	}
 	.add-btn{
 		font-size: 13px;
@@ -344,37 +343,113 @@ body{
 	.logo-footer ul li{
 		font-size: 13px
 	}
-
 }
 @media(max-width: 858px){
 	.checkbtn, .closebtn{
 		display: block;
 	}
+	.closebtn{
+		position: absolute;
+		top: -10px;
+		right: 20px;
+		font-size: 20px;
+	}
+	.mini-menu-controller{
+		position: absolute;
+		top: 40px;
+		text-align: left;
+		padding-left: 30px;
+	}
 	.main-menu{
 		position: fixed;
 		width: 100%;
 		height: 100vh;
-		background: hsl(231, 69%, 60%);
+		background: rgba(37, 43, 70, 0.9);
 		left: -120%;
 		text-align: center;
 		transition: all .5s;
 		margin-top: -30px;
+		padding-top: 100px;
 		z-index: 2;
+	}
+	.main-menu li:nth-child(1){
+		border-top: 1px solid lightgray;
 	}
 	.main-menu li{
 		display: block !important;
-		margin: 10px 0;
-		line-height: 30px;
+		margin: 10px 30px;
+		padding: 10px 0;
+		border-bottom: 1px solid lightgray;
+	}
+	.main-menu li:nth-child(4){
+		border-bottom: none;
+	}
+	.main-menu .btn{
+		background: unset;
+		margin-left: 0;
+		border: 2px solid white;
+		width: 100% !important;
+	}
+	.main-menu li a{
+		color: #fff;
 	}
 	#check:checked ~ .main-menu{
 		left: 0px;
-
+	}
+}
+@media(max-width: 800px){
+	.right-bg{
+		right: -4.4%;
+		top: 28%;
+		width: 45%;
+	}
+	.img-right{
+		right: 0px;
+	}
+	.footer h3{
+		font-size: 18px;
+	}
+	.form-row input{
+		font-size: 13px;
+	}
+	.contact-btn{
+		width: 100%;
+		font-size: 10px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0;
+	}
+}
+@media(max-width: 768px){
+	.right-bg{
+		right: -2%;
+		top: 28%;
+		width: 45%;
+	}
+	.img-right{
+		right: 0px;
+	}
+	.footer h3{
+		font-size: 18px;
+	}
+	.form-row input{
+		font-size: 13px;
+	}
+	.contact-btn{
+		width: 100%;
+		font-size: 10px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0;
 	}
 }
 @media(max-width: 576px){
 	.first-layer{
 		margin-top: 10%;
-
 	}
 	.banner-left{
 		order: 1;
@@ -464,7 +539,6 @@ body{
 	.footer{
 		padding-top: 15%;
 		padding-bottom: 15%;
-
 	}
 	.footer h3{
 		font-size: 24px;
@@ -490,3 +564,4 @@ body{
 		margin-right: 10px;
 	}
 }
+/*=========================================End of Media Quesries======================================*/
