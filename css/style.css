@@ -331,13 +331,19 @@ body{
 	}
 	.tab-one-right p, .tab-two-right p, .tab-three-right p{
 		font-size: 13px;
-		}
-		.tab-one-right a, .tab-two-right a, .tab-three-right a{
+	}
+	.tab-one-right a, .tab-two-right a, .tab-three-right a{
 		font-size: 13px;
 	}
 	.layer-four{
-	margin-top: 6em;
-}
+		margin-top: 6em;
+	}
+	.add-btn{
+		font-size: 13px;
+	}
+	.logo-footer ul li{
+		font-size: 13px
+	}
 
 }
 @media(max-width: 858px){
