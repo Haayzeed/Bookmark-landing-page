@@ -232,7 +232,7 @@
 			</div>
 		</section>
 		<section class="row footer">
-			<div class="col-md-4 offset-md-4">
+			<div class="col-md-6 offset-md-3">
 				<p class="text-center text-white text-uppercase">35,000+ already joined</p>
 				<h3 class="text-center text-white">Stay up-to-date with what you're doing</h3>
 				<form class="mt-4">
@@ -240,7 +240,7 @@
 						<div class="col-md-8">
 							<input type="text" name="" class="form-control" placeholder="Enter email address">
 						</div>
-						<div class="col-md-4 contact-btn-holder">
+						<div class="col-md-4" style="border: 2px solid black">
 							<button class="btn contact-btn text-white btn-block">Contact Us</button>
 						</div>
 					</div>
