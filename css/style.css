@@ -279,6 +279,18 @@ body{
 	.first-layer p{
 		font-size: 14px;
 	}
+	.first-layer .bordered-one{
+		font-size: 13px;
+		margin-right: 10px;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+	.first-layer .bordered-two{
+		font-size: 13px;
+		margin-right: 0px;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
 	.img-right{
 		right: -40px;
 		max-width: 90%;
@@ -290,6 +302,43 @@ body{
 		width: 50%;
 		height: 180px;
 	}
+	.second-layer{
+		margin-top: 10%;
+	}
+	.second-layer p{
+		font-size: 13px;
+	}
+	.tab-layer .nav-pills{
+		display: block !important;
+	}
+	.nav-pills .nav-item{
+		border-top: 0.5px solid lightgray;
+		border-bottom: 0.5px solid lightgray;
+	}
+	.tab-one img, .tab-two img, .tab-three img{
+		max-width: 80%;
+		height: 200px;
+	}
+	.left-bg{
+		left: -18%;
+		top: 35%;
+		width: 55%;
+		height: 180px;
+	}
+	.tab-one-right h4, .tab-two-right h4, .tab-three-right h4{
+		margin-top: -10%;
+		font-size: 22px;
+	}
+	.tab-one-right p, .tab-two-right p, .tab-three-right p{
+		font-size: 13px;
+		}
+		.tab-one-right a, .tab-two-right a, .tab-three-right a{
+		font-size: 13px;
+	}
+	.layer-four{
+	margin-top: 6em;
+}
+
 }
 @media(max-width: 858px){
 	.checkbtn, .closebtn{
