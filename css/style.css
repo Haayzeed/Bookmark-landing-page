@@ -5,6 +5,7 @@
 }
 body{
 	font-family: 'Rubik', sans-serif;
+	overflow: hidden;
 }
 .menu-holder{
 	width: 100%;
@@ -211,7 +212,7 @@ body{
 /*=====================================Media Queries====================================*/
 @media(max-width: 1680px){
 	.right-bg{
-		right: -23% !important;
+		right: -22% !important;
 		width: 55%;	
 	}
 }
